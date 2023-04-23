@@ -1,6 +1,7 @@
 # Open the file as file object in read-only mode
 # Read all lines in file as list and saved as todos, because we dont want to overwrite the file content in each exexution
-def get_todo(filepath="todo.txt"):
+FILEPATH = "todo.txt"
+def get_todo(filepath=FILEPATH):
     """
     Read a test file and return the list of
     to-do items.
@@ -11,7 +12,7 @@ def get_todo(filepath="todo.txt"):
         todos_local = file_local.readlines()
     return todos_local
 
-def write_todos(todos_args, filepath="todo.txt"):
+def write_todos(todos_args, filepath=FILEPATH):
     """
     Write the to-do items in the text file. These are the doc-strings of this function.
     :param todos_args:
